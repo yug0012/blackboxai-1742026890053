@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Speed Legends - Ultimate Racing Experience</title>
+    <meta name="description" content="Experience the ultimate BMW racing showdown in BMW Speed Legends. Race against 50 players, customize iconic BMW models, and dominate stunning tracks worldwide.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'racing': ['"Racing Sans One"', 'cursive'],
+                        'sans': ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-black/80 backdrop-blur-sm z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-racing text-blue-500">
+                    BMW Speed Legends
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="hover:text-blue-500 transition-colors">Features</a>
+                    <a href="#cars" class="hover:text-blue-500 transition-colors">Cars</a>
+                    <a href="#gallery" class="hover:text-blue-500 transition-colors">Gallery</a>
+                </div>
+                <a href="#download" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full font-bold transition-colors">
+                    Download Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen relative flex items-center" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://images.pexels.com/photos/3972755/pexels-photo-3972755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat;">
+        <div class="container mx-auto px-4 py-32">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl md:text-7xl font-racing mb-6 leading-tight">
+                    Ultimate BMW Racing Showdown
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-300">
+                    Race against 50 players worldwide, customize iconic BMW models, and dominate stunning tracks in the most thrilling racing experience ever.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#download" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-full text-xl font-bold transition-colors inline-flex items-center">
+                        <i class="fas fa-download mr-2"></i> Download Now
+                    </a>
+                    <a href="#features" class="bg-white/10 hover:bg-white/20 px-8 py-4 rounded-full text-xl transition-colors inline-flex items-center">
+                        <i class="fas fa-play mr-2"></i> Watch Trailer
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-racing text-center mb-16">Game Features</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gray-800/50 p-6 rounded-2xl hover:transform hover:scale-105 transition-transform">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Massive Multiplayer Races</h3>
+                    <p class="text-gray-400">Join live races with up to 50 players and prove you're the best BMW driver on the track.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-gray-800/50 p-6 rounded-2xl hover:transform hover:scale-105 transition-transform">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Endless BMW Collection</h3>
+                    <p class="text-gray-400">Unlock and upgrade hundreds of BMW cars, each with unique handling and performance.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-gray-800/50 p-6 rounded-2xl hover:transform hover:scale-105 transition-transform">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Dynamic Tracks</h3>
+                    <p class="text-gray-400">Race on ever-changing tracks with dynamic weather and time-of-day effects.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="bg-gray-800/50 p-6 rounded-2xl hover:transform hover:scale-105 transition-transform">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Customization</h3>
+                    <p class="text-gray-400">Personalize your BMW with unique paint jobs, rims, and decals to stand out on the track.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="bg-gray-800/50 p-6 rounded-2xl hover:transform hover:scale-105 transition-transform">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Leaderboards & Rewards</h3>
+                    <p class="text-gray-400">Climb the global leaderboards and earn rewards to unlock rare BMW models.</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="bg-gray-800/50 p-6 rounded-2xl hover:transform hover:scale-105 transition-transform">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">In-App Purchases</h3>
+                    <p class="text-gray-400">Speed up your progress with exclusive car packs, customizations, and performance upgrades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Showcase -->
+    <section id="cars" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-racing text-center mb-16">Featured BMW Models</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="relative group">
+                    <img src="https://images.pexels.com/photos/892522/pexels-photo-892522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         alt="BMW M3" 
+                         class="w-full h-64 object-cover rounded-xl">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute bottom-0 p-6">
+                            <h3 class="text-2xl font-bold">BMW M3</h3>
+                            <p class="text-gray-300">The iconic performance sedan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="https://images.pexels.com/photos/6894429/pexels-photo-6894429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         alt="BMW i8" 
+                         class="w-full h-64 object-cover rounded-xl">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute bottom-0 p-6">
+                            <h3 class="text-2xl font-bold">BMW i8</h3>
+                            <p class="text-gray-300">The future of performance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="https://images.pexels.com/photos/12206661/pexels-photo-12206661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         alt="BMW M8" 
+                         class="w-full h-64 object-cover rounded-xl">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute bottom-0 p-6">
+                            <h3 class="text-2xl font-bold">BMW M8</h3>
+                            <p class="text-gray-300">Ultimate luxury performance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-20 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-racing mb-8">Download Now</h2>
+            <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
+                Are you ready to burn rubber and leave your rivals in the dust? Download BMW Speed Legends now and start your journey to become the ultimate BMW racing champion!
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#" class="bg-white/10 hover:bg-white/20 px-8 py-4 rounded-xl inline-flex items-center">
+                    <i class="fab fa-apple text-4xl mr-4"></i>
+                    <div class="text-left">
+                        <div class="text-sm">Download on the</div>
+                        <div class="text-xl font-bold">App Store</div>
+                    </div>
+                </a>
+                <a href="#" class="bg-white/10 hover:bg-white/20 px-8 py-4 rounded-xl inline-flex items-center">
+                    <i class="fab fa-google-play text-4xl mr-4"></i>
+                    <div class="text-left">
+                        <div class="text-sm">Get it on</div>
+                        <div class="text-xl font-bold">Google Play</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-racing text-blue-500 mb-6 md:mb-0">
+                    BMW Speed Legends
+                </div>
+                <div class="flex space-x-6 text-2xl">
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2024 BMW Speed Legends. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
